@@ -4,6 +4,7 @@ import Decryption from './components/Decryption';
 import { useState } from 'react';
 
 
+
 //The App takes an input and returns the encrypted message. the Decryption comp recieves the encrypted message. 
 //The app uses the 64-based encoding btoa and decoding atob methods
 
@@ -24,16 +25,18 @@ return (
     <h1>ЭНИГМА</h1>
     <form onSubmit={handleSubmit} className='main'>
         <label>Введите свое сообщение для шифрования:</label>
-        <input 
+        <input className='input'
             type="text"
             value={message}
             onChange={(e)=>setMessage(e.target.value)}>
         </input>
-            <button>Зашифровать</button>
+          <div>
+            <button className="buttons">Зашифровать</button>
+          </div>
     </form>
-    <div className='obscuredTextDiv'>
-      <label className='obscuredText'>{message}</label> 
-    </div>
+<div className='obscuredTextDiv'>
+    <label className='obscuredText'>{message}</label> 
+</div>
   <Decryption encryptedMessage={encryptedMessage}/>
 </div>
   );

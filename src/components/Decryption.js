@@ -13,8 +13,8 @@ export default function Decryption(props) {
 
     return(
     <div>
-        <label className="main">Decode your message</label> 
-        <button onClick={handleDecode}>Decode Message</button>
+        <label className="main">Расшифруйте свое сообщение</label> 
+        <button className='buttons' onClick={handleDecode}>Расшифровать</button>
             <div className="decodeSection">
                 {decoded}
             </div>

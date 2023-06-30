@@ -21,6 +21,36 @@ h1{
   border-color: #0e6b0e;
 }
 
+.input{
+  background-color: #224622;
+  color: #7bbe18;
+  border: 2px solid #7bbe18;
+  height: 20px;
+}
+
+input:focus{
+  outline: none;
+  border: none;
+}
+
+.buttons{
+  color:#0e6b0e;
+  font-size: 20px;
+  height: 30px;
+  background-color: rgb(188, 135, 237);
+  
+}
+
 .obscuredText{
   font-family: 'Flow Rounded', cursive;
+}
+
+.obscuredTextDiv{
+  padding: 10px;
+  width: 700px;
+  height: fit-content;
+  border: solid 2px;
+  word-wrap: break-word;
+  border-color: #0e6b0e;
+  color: #0e6b0e;
 }
