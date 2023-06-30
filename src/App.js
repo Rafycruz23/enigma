@@ -19,20 +19,22 @@ function App() {
     };
 
 return (
-<div className="App">
-  <div>
-    <form onSubmit={handleSubmit}>
-        <label>Enter your message to encrypt:</label>
+<div className="main">
+  
+    <h1>ЭНИГМА</h1>
+    <form onSubmit={handleSubmit} className='main'>
+        <label>Введите свое сообщение для шифрования:</label>
         <input 
             type="text"
             value={message}
             onChange={(e)=>setMessage(e.target.value)}>
         </input>
-            <button>Encrypt</button>
+            <button>Зашифровать</button>
     </form>
-
-  </div>
-      <Decryption encryptedMessage={encryptedMessage}/>
+    <div className='obscuredTextDiv'>
+      <label className='obscuredText'>{message}</label> 
+    </div>
+  <Decryption encryptedMessage={encryptedMessage}/>
 </div>
   );
 }

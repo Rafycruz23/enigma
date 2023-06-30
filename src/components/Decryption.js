@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 
+
 export default function Decryption(props) {
 
     const [decoded, setDecoded] = useState('')
@@ -12,7 +13,7 @@ export default function Decryption(props) {
 
     return(
     <div>
-        <label>THIS IS DECRYPTION SECTION {props.encryptedMessage}</label> 
+        <label className="main">Decode your message</label> 
         <button onClick={handleDecode}>Decode Message</button>
             <div className="decodeSection">
                 {decoded}
