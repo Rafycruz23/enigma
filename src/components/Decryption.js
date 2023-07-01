@@ -12,10 +12,11 @@ export default function Decryption(props) {
     }
 
     return(
-    <div>
+    <div className="decrypt">
+        <label className="asterisk">****************************************************************************</label>
         <label className="main">Расшифруйте свое сообщение</label> 
-        <button className='buttons' onClick={handleDecode}>Расшифровать</button>
-            <div className="decodeSection">
+        <button type="submit" className='buttons' onClick={handleDecode}>Расшифровать</button>
+            <div className="decodeSectionDiv">
                 {decoded}
             </div>
     </div>

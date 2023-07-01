@@ -1,14 +1,26 @@
+
 body {
   margin: 0;
   font-family: 'DotGothic16', sans-serif;
   font-family: 'Press Start 2P';
   font-size: 20px;
-  background-color: rgb(9, 9, 25);
+  background-color: #090909;
   /* font-family: 'Flow Rounded', cursive; */
+  display: flex;
+  justify-content: center;
 }
 
 .main{
-  color:#0e6b0e;
+  color:#12e675; 
+  
+}
+
+.decrypt{
+  display: flex;
+
+  align-items:flex-start;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 h1{
@@ -18,14 +30,24 @@ h1{
 .enmessage{
   width: 50px;
   height: 30px;
-  border-color: #0e6b0e;
+  border-color: #12e675;
+  
 }
 
 .input{
-  background-color: #224622;
-  color: #7bbe18;
-  border: 2px solid #7bbe18;
-  height: 20px;
+  outline: none;
+  font-family: 'Press Start 2P';
+  background-color: #12e675;
+  width: 100%;
+  max-width: 900px;
+  height: 200px;
+  max-height: 200px;
+  margin: 20px 0 20px 0;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items:center;
 }
 
 input:focus{
@@ -34,23 +56,52 @@ input:focus{
 }
 
 .buttons{
-  color:#0e6b0e;
-  font-size: 20px;
+  color: #000;
+  font-size: 10px;
   height: 30px;
-  background-color: rgb(188, 135, 237);
-  
+  background-color: #12e675;
+  font-family: 'Press Start 2P';
+  margin: 20px 0 20px 0;
 }
 
 .obscuredText{
   font-family: 'Flow Rounded', cursive;
+  word-wrap: break-word;
+  max-width: 740px;
 }
 
 .obscuredTextDiv{
+  margin: 20px 0 20px 0;
   padding: 10px;
-  width: 700px;
+  width: 740px;
   height: fit-content;
   border: solid 2px;
   word-wrap: break-word;
-  border-color: #0e6b0e;
-  color: #0e6b0e;
+  border-color: #12e675;
+  color: #12e675;
+}
+
+.encryptedTxt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+  max-width: 500px;
+  margin: 20px 0 20px 0;
+}
+
+.asterisk{
+  font-size: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.decodeSectionDiv{
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  width: 740px;
+  height: 200px;
+  border: solid 2px;
+  word-wrap: break-word;
+  border-color: #12e675;
+  color: #12e675;
 }
