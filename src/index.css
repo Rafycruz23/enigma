@@ -8,7 +8,11 @@ body {
   /* font-family: 'Flow Rounded', cursive; */
   display: flex;
   justify-content: center;
+  flex-shrink: 1;
+  /* overflow: hidden; */
 }
+
+
 
 .main{
   color:#12e675; 
@@ -40,7 +44,7 @@ h1{
   background-color: #12e675;
   width: 100%;
   max-width: 900px;
-  height: 200px;
+  height: 100px;
   max-height: 200px;
   margin: 20px 0 20px 0;
   color: #000000;
@@ -99,7 +103,7 @@ input:focus{
   margin: 20px 0 20px 0;
   padding: 10px;
   width: 740px;
-  height: 200px;
+  height: 100px;
   border: solid 2px;
   word-wrap: break-word;
   border-color: #12e675;

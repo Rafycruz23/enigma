@@ -33,14 +33,6 @@ function App() {
         setMessage("")
     };
 
-    const [decoded, setDecoded] = useState('')
-
-
-    function handleDecode(encryptedMessage){
-      console.log(encryptedMessage)
-      setDecoded(window.atob(encryptedMessage))
-  }
-
     // function changeFont(){
     //   document.getElementById("obscuredText").style.setProperty("font-family", "Press Start 2P");
     // }
@@ -61,11 +53,10 @@ return (
             <button type='submit' className="buttons">Зашифровать</button>
           </div>
     </form>
-            <button type='submit' onClick="handleDecode()" className="buttons">DECODE</button>
     <label className="asterisk">****************************************************************************</label>
 <div className='obscuredTextDiv'>
     <label className='obscuredText'>{message}</label> 
-    <label className='obscuredText'>{decoded}</label> 
+    {/* <label className='obscuredText'>{decoded}</label>  */}
 </div>
 <div className='encryptedTxt'>
     <label>Зашифрованное сообщение:</label>
